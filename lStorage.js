@@ -63,7 +63,7 @@ function showItem(){
   if(localStorage.length){
     //console.log(`Found elements .${localStorage.length}`);
     for(let[key,value] of Object.entries(localStorage)){
-      results.innerHTML+=`<span>${key}=>${value}</span>`
+      results.innerHTML+=`<span>${key}=>${value}</span><br><br>`
     }
   } else{
     results.innerHTML=`No Items in Local Storage`;
